@@ -29,8 +29,8 @@ app.use(express.json()); // Parse JSON from request body
 // Connect to database
 async function getConnection() {
   await ConnectDb();
-  console.log("finally done");
-  console.log("dd")
+  console.log("finallyd done");
+  
 }
 getConnection();
 
