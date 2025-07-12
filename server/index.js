@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 import express from "express";
 import cors from "cors";
-import { ConnectDb } from "./config/db.js";
+
+import { ConnectDb } from "./config/Db.js";
 import { task } from "./controller/task_controller.js";
 import { All } from "./controller/getAllTask.js";
 import { task_model } from "./model/task_models.js";
@@ -13,7 +14,7 @@ import authenticate from "./middleware/authToken.js";
 import { allforamdin } from "./controller/getalltaskadmin.js";
 
 const app = express();
-const Port = 3001;
+const Port = process.env.PORT || 3001;
 
 
 
