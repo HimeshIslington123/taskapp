@@ -30,6 +30,7 @@ app.use(express.json()); // Parse JSON from request body
 async function getConnection() {
   await ConnectDb();
   console.log("finally done");
+  console.log("dd")
 }
 getConnection();
 
